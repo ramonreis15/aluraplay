@@ -1,0 +1,328 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background: url(../img/menu/bg.png);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+   
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* CABEÇALHO */
+
+.cabecalho__container {
+    background-color: #d5dbdd;
+    height: 80px;
+    width: 100%;
+    padding: 0 25px;
+    border-bottom: 2px solid #7E076D;
+}
+
+.logo__item {
+    background-image: url(../img/cabecalho/Logo.png);
+    background-repeat: no-repeat;
+    padding: 15px 65px;
+    cursor: pointer;
+}
+
+.pesquisar__input {
+    width: 260px;
+    height: 32px;
+    font-size: 16px;
+    padding: 3px 8px;
+    color: #000000;
+    border: 1px solid #7E076D;
+}
+
+.pesquisar__label {
+    background-image: url(../img/cabecalho/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #7E076D;
+    background-color: #ffffff;
+    border-left: none;
+    padding: 8px 18px 5px;
+    cursor: pointer;
+}
+
+.cabecalho__audio {
+    background-image: url(../img/cabecalho/mic.png);
+    padding: 20px;
+    display: none;
+}
+
+.cabecalho__videos {
+    background-image: url(../img/cabecalho/video_call.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+.cabecalho__apps {
+    background-image: url(../img/cabecalho/apps.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+.cabecalho__notificacoes {
+    background-image: url(../img/cabecalho/notifications.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+.cabecalho__avatar {
+    background-image: url(../img/cabecalho/Avatar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+/* MENU LATERAL */
+
+.menu__container {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.menu__itens:hover {
+    background-color: #ffffffa6;
+    color: #000000;
+    transition: 1s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.icone__inicio::before {
+    content: url(../img/menu/home.png);
+}
+
+.icone__explorar::before {
+    content: url(../img/menu/explore.png);
+}
+
+.icone__shorts::before {
+    content: url(../img/menu/shorts.png);
+}
+
+.icone__inscricoes::before {
+    content: url(../img/menu/subscriptions.png);
+}
+
+.icone__biblioteca::before {
+    content: url(../img/menu/video_library.png);
+}
+
+.icone__historico::before {
+    content: url(../img/menu/history.png);
+}
+
+.icone__relogio::before {
+    content: url(../img/menu/history_toggle_off.png);
+}
+
+.icone__like::before {
+    content: url(../img/menu/thumb_up_alt.png);
+}
+
+.icone__alura::before {
+    content: url(../img/menu/Avatar_Alura.png);
+}
+
+.icone__gaveta::before {
+    content: url(../img/menu/Avatar_Gaveta.png);
+}
+
+.icone__ballerini::before {
+    content: url(../img/menu/Avatar_Rafa.png);
+}
+
+.icone__iamarino::before {
+    content: url(../img/menu/Avatar_Atila.png);
+}
+
+.icone__souto::before {
+    content: url(../img/menu/Avatar_Souto.png);
+}
+
+.icone__nerd::before {
+    content: url(../img/menu/Avatar_Jovem_Nerd.png);
+}
+
+.icone__deschamps::before {
+    content: url(../img/menu/Avatar_Deschamps.png);
+}
+
+.icone__mostrar::before {
+    content: url(../img/menu/keyboard_arrow_down.png);
+}
+
+.icone__videos::before {
+    content: url(../img/menu/videos.png);
+}
+
+.icone__filmes::before {
+    content: url(../img/menu/filmes.png);
+}
+
+.icone__jogos::before {
+    content: url(../img/menu/jogos.png);
+}
+
+/* SECAO SUPERIOR */
+
+.superior__secao__container {
+    height: 63px;
+    font-size: 16px;
+    background-color: #000000;
+    padding: 0 20px;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    left: 0;
+}
+
+.superior__item {
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #7E076D;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.superior__item:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: #9ea6ac;
+}
+
+/* SEÇÃO VÍDEOS */
+
+.videos__container {
+    padding: 153px 20px 10px 20px;
+}
+
+.videos__item:hover {
+    z-index: 2;
+}
+
+.descricao-video h3 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.descricao-video p {
+    font-size: 14px;
+    color: #d8d8d8;
+    padding-top: 5px;
+}
+
+/* RODAPÉ */
+
+.rodape__container {
+    width: 100%;
+    height: 875px;
+    color: #38454d;
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: #d5dbdd;
+    border-top: 2px solid #7E076D;
+}
+
+.rodape__titulo {
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+}
+
+@media(min-width: 834px) {
+
+    body {
+        height: 100vh;
+    }
+
+    /* ESTILOS DO MENU LATERAL */
+
+    .menu__container {
+        font-size: 16px;
+    }
+
+    .menu__lista {
+        padding-top: 15px;
+    }
+
+    .menu__lista li {
+        width: 100%;
+    }
+
+    /* ESTILOS DA SECAO SUPERIOR */
+
+    .superior__secao__container {
+        border-top: 1px solid #7E076D;
+        border-bottom: 1px solid #7E076D;
+        width: auto;
+        left: 82px;
+    }
+
+    /*ESTILOS SEÇÃO VÍDEOS */
+
+    .videos__container {
+        padding-left: 90px;
+        padding-right: 17px;
+    }
+
+    .videos__item:hover {
+        transform: scale(1.01);
+    }
+
+    /* ESTILOS RODAPÉ */
+
+    .rodape__container {
+        height: 420px;
+        padding-left: 74px;
+    }
+
+}
+
+@media(min-width: 1440px) {
+
+    /* SEÇÃO SUPERIOR */
+
+    .superior__secao__container {
+        left: 247px;
+    }
+
+    /* ESTILOS DO MENU LATERAL */
+
+    .menu__lista {
+        border-bottom: 1.5px solid #000000;
+    }
+
+    /* ESTILOS VIDEOS */
+
+    .videos__container {
+        padding-right: 10px;
+        padding-left: 248px;
+    }
+
+    /* ESTILOS RODAPÉ */
+
+    .rodape__container {
+        padding-left: 240px;
+        height: 225px;
+    }
+
+}
